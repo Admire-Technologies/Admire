@@ -49,10 +49,10 @@ export default function Footer() {
                 fontWeight: 'bold',
                 fontSize: '14px'
               }}>
-                R
+                A
               </div>
 
-              {/* Get in touch button in top right */}
+              {/* Start project button in top right */}
               <div style={{
                 position: 'absolute',
                 top: '12px',
@@ -68,11 +68,11 @@ export default function Footer() {
                   color: '#000',
                   cursor: 'pointer'
                 }}>
-                  Get in touch
+                  Start project
                 </button>
               </div>
 
-              {/* Placeholder for underwater/turtle image */}
+              {/* Placeholder for tech/digital image */}
               <div style={{
                 position: 'absolute',
                 bottom: '0',
@@ -84,7 +84,7 @@ export default function Footer() {
                 justifyContent: 'center',
                 fontSize: '40px'
               }}>
-                🐢
+                💻
               </div>
             </div>
 
@@ -105,7 +105,7 @@ export default function Footer() {
               fontSize: '12px',
               color: '#666'
             }}>
-              👤
+              🚀
             </div>
           </div>
 
@@ -121,7 +121,7 @@ export default function Footer() {
               margin: '0 0 0.5rem 0',
               color: '#fff'
             }}>
-              From zero to one
+              From idea to impact
             </h2>
             <p style={{
               fontSize: '56px',
@@ -130,7 +130,7 @@ export default function Footer() {
               margin: '0',
               color: '#666'
             }}>
-              Designed to ship
+              Built to scale
             </p>
           </div>
 
@@ -150,7 +150,7 @@ export default function Footer() {
               color: '#fff',
               transition: 'all 0.3s ease'
             }}>
-              Book a call with me
+              Schedule a consultation
               <span style={{
                 backgroundColor: '#c4ff4d',
                 borderRadius: '50%',
@@ -195,13 +195,13 @@ export default function Footer() {
               fontWeight: 'bold',
               fontSize: '16px'
             }}>
-              R
+              A
             </div>
             <span style={{
               fontSize: '13px',
               color: '#666'
             }}>
-              All rights reserved.
+              © 2024 Admire. All rights reserved.
             </span>
           </div>
 
@@ -219,15 +219,6 @@ export default function Footer() {
             }}>
               Home
             </a>
-            <a href="#work" style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '14px',
-              fontWeight: '500',
-              transition: 'color 0.2s ease'
-            }}>
-              Work
-            </a>
             <a href="#services" style={{
               color: '#fff',
               textDecoration: 'none',
@@ -237,14 +228,23 @@ export default function Footer() {
             }}>
               Services
             </a>
-            <a href="#why-us" style={{
+            <a href="#work" style={{
               color: '#fff',
               textDecoration: 'none',
               fontSize: '14px',
               fontWeight: '500',
               transition: 'color 0.2s ease'
             }}>
-              Why Us
+              Portfolio
+            </a>
+            <a href="#contact" style={{
+              color: '#fff',
+              textDecoration: 'none',
+              fontSize: '14px',
+              fontWeight: '500',
+              transition: 'color 0.2s ease'
+            }}>
+              Contact
             </a>
           </nav>
 
@@ -262,22 +262,6 @@ export default function Footer() {
             }}>
               ✉
             </a>
-            <a href="#twitter" style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '18px',
-              transition: 'color 0.2s ease'
-            }}>
-              𝕏
-            </a>
-            <a href="#dribbble" style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '18px',
-              transition: 'color 0.2s ease'
-            }}>
-              ⚽
-            </a>
             <a href="#linkedin" style={{
               color: '#fff',
               textDecoration: 'none',
@@ -286,10 +270,26 @@ export default function Footer() {
             }}>
               in
             </a>
+            <a href="#github" style={{
+              color: '#fff',
+              textDecoration: 'none',
+              fontSize: '18px',
+              transition: 'color 0.2s ease'
+            }}>
+              ⚡
+            </a>
+            <a href="#twitter" style={{
+              color: '#fff',
+              textDecoration: 'none',
+              fontSize: '18px',
+              transition: 'color 0.2s ease'
+            }}>
+              𝕏
+            </a>
           </div>
         </div>
 
-        {/* Large "Get in touch" Text */}
+        {/* Large "Start your project" Text */}
         <div style={{
           fontSize: '120px',
           fontWeight: '700',
@@ -301,7 +301,7 @@ export default function Footer() {
           textAlign: 'left',
           marginTop: '2rem'
         }}>
-          Get in touch
+          Start your project
         </div>
       </div>
     </footer>

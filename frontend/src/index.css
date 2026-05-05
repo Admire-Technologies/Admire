@@ -11,8 +11,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 button {
   font-family: inherit;
+}
+
+/* Container utility class */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  /* Mobile header adjustments */
+  header {
+    padding: 2rem 2rem !important;
+  }
+  
+  /* Mobile hero adjustments */
+  main {
+    padding: 0 2rem 2rem !important;
+  }
+  
+  h1 {
+    font-size: clamp(32px, 8vw, 48px) !important;
+    letter-spacing: -1px !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px !important;
+  }
+  
+  .hero-actions {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
 }
