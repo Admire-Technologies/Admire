@@ -3,6 +3,7 @@ import HeroSection from '../components/HeroSection'
 import PortfolioSection from '../components/PortfolioSection'
 import WhyMeSection from '../components/WhyMeSection'
 import ProcessSection from '../components/ProcessSection'
+import PricingSection from '../components/PricingSection'
 import FounderSection from '../components/FounderSection'
 import Footer from '../components/Footer'
 
@@ -18,6 +19,7 @@ export default function Home() {
       <PortfolioSection />
       <WhyMeSection />
       <ProcessSection />
+      <PricingSection />
       <FounderSection />
       <Footer />
     </div>
