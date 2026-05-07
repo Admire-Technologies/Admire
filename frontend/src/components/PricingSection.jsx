@@ -45,6 +45,7 @@ const pricingStyles = {
   // LEFT PANEL - Ongoing Partnership
   leftPanel: {
     background: "#1a1a1a",
+    borderRadius: "20px",
     padding: "3rem",
     minHeight: "280px",
     color: "#fff",
@@ -155,6 +156,7 @@ const pricingStyles = {
   // RIGHT PANEL - Design Sprint
   rightPanel: {
     background: "#f5f5f5",
+    borderRadius: "20px",
     padding: "3rem",
     minHeight: "280px",
     color: "#000",
@@ -227,8 +229,8 @@ export default function PricingSection() {
         {/* Header */}
         <div style={pricingStyles.header}>
           <p style={pricingStyles.sectionLabel}>PRICING</p>
-          <h2 style={pricingStyles.mainTitle}>Choose your plan</h2>
-          <h2 style={pricingStyles.subTitle}>Start building today</h2>
+          <h2 style={pricingStyles.mainTitle}>Transparent pricing</h2>
+          <h2 style={pricingStyles.subTitle}>No surprises</h2>
         </div>
 
         {/* Pricing Cards */}

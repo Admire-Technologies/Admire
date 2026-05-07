@@ -10,45 +10,6 @@ export default function FounderSection() {
         maxWidth: '1400px',
         margin: '0 auto'
       }}>
-        {/* Header with logo and button */}
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '6rem'
-        }}>
-          <div style={{
-            width: '40px',
-            height: '40px',
-            backgroundColor: '#fff',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#000',
-            fontWeight: 'bold',
-            fontSize: '18px'
-          }}>
-            R
-          </div>
-
-          <button style={{
-            backgroundColor: '#c4ff4d',
-            border: 'none',
-            borderRadius: '25px',
-            padding: '12px 24px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            cursor: 'pointer',
-            fontSize: '14px',
-            fontWeight: '500',
-            color: '#000'
-          }}>
-            Get in touch
-            <span style={{ fontSize: '18px' }}>→</span>
-          </button>
-        </div>
 
         {/* Content Grid */}
         <div style={{

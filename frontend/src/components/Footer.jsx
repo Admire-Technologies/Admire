@@ -19,95 +19,7 @@ export default function Footer() {
           alignItems: 'center',
           marginBottom: '6rem'
         }}>
-          {/* Image Card */}
-          <div style={{
-            position: 'relative',
-            marginBottom: '3rem'
-          }}>
-            <div style={{
-              width: '240px',
-              height: '140px',
-              backgroundColor: '#1a4a4a',
-              borderRadius: '12px',
-              overflow: 'hidden',
-              position: 'relative',
-              backgroundImage: 'linear-gradient(180deg, #2a5a5a 0%, #1a4a4a 100%)'
-            }}>
-              {/* Logo in top left */}
-              <div style={{
-                position: 'absolute',
-                top: '12px',
-                left: '12px',
-                width: '28px',
-                height: '28px',
-                backgroundColor: '#fff',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#000',
-                fontWeight: 'bold',
-                fontSize: '14px'
-              }}>
-                A
-              </div>
-
-              {/* Start project button in top right */}
-              <div style={{
-                position: 'absolute',
-                top: '12px',
-                right: '12px'
-              }}>
-                <button style={{
-                  backgroundColor: '#c4ff4d',
-                  border: 'none',
-                  borderRadius: '20px',
-                  padding: '6px 12px',
-                  fontSize: '10px',
-                  fontWeight: '500',
-                  color: '#000',
-                  cursor: 'pointer'
-                }}>
-                  Start project
-                </button>
-              </div>
-
-              {/* Placeholder for tech/digital image */}
-              <div style={{
-                position: 'absolute',
-                bottom: '0',
-                left: '0',
-                right: '0',
-                height: '80%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '40px'
-              }}>
-                💻
-              </div>
-            </div>
-
-            {/* Small profile circle overlapping bottom right */}
-            <div style={{
-              position: 'absolute',
-              bottom: '-15px',
-              right: '-15px',
-              width: '50px',
-              height: '50px',
-              backgroundColor: '#fff',
-              borderRadius: '50%',
-              border: '3px solid #000',
-              overflow: 'hidden',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '12px',
-              color: '#666'
-            }}>
-              🚀
-            </div>
-          </div>
+          
 
           {/* Main CTA Text */}
           <div style={{
@@ -201,7 +113,7 @@ export default function Footer() {
               fontSize: '13px',
               color: '#666'
             }}>
-              © 2024 Admire. All rights reserved.
+              © 2026 Admire. All rights reserved.
             </span>
           </div>
 
@@ -301,7 +213,7 @@ export default function Footer() {
           textAlign: 'left',
           marginTop: '2rem'
         }}>
-          Start your project
+          Start your project today
         </div>
       </div>
     </footer>
