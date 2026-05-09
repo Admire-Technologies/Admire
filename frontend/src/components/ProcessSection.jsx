@@ -202,7 +202,7 @@ const steps = [
 
 const styles = {
   section: {
-    background: "#ebebeb",
+    background: "#ffffff",
     padding: "8rem 4rem",
     fontFamily: "'DM Sans', sans-serif",
   },

@@ -302,6 +302,7 @@ export default function WhyMeSection() {
           width: "100%",
           padding: "8rem 4rem",
           fontFamily: "'DM Sans', sans-serif",
+          backgroundColor: "#ffffff",
         }}
       >
         <div

@@ -3,6 +3,8 @@ import HeroSection from '../components/HeroSection'
 import PortfolioSection from '../components/PortfolioSection'
 import WhyMeSection from '../components/WhyMeSection'
 import ProcessSection from '../components/ProcessSection'
+import ServicesSection from '../components/ServicesSection'
+import ClientsSection from '../components/ClientsSection'
 import PricingSection from '../components/PricingSection'
 import FounderSection from '../components/FounderSection'
 import Footer from '../components/Footer'
@@ -19,6 +21,8 @@ export default function Home() {
       <PortfolioSection />
       <WhyMeSection />
       <ProcessSection />
+      <ServicesSection />
+      <ClientsSection />
       <PricingSection />
       <FounderSection />
       <Footer />

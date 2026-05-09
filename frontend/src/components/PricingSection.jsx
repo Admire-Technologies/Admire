@@ -5,6 +5,7 @@ const pricingStyles = {
     width: "100%",
     padding: "8rem 4rem",
     fontFamily: "'DM Sans', sans-serif",
+    backgroundColor: "#ffffff",
   },
   container: {
     maxWidth: "1400px",
