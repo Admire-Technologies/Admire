@@ -223,17 +223,18 @@ export default function HeroSection() {
                   alignItems: "center",
                   justifyContent: "center",
                   boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
+                  overflow: "hidden",
                 }}
               >
-                <span
+                <img
+                  src="/admire-logo.png"
+                  alt="Admire Logo"
                   style={{
-                    color: "#ff4d4d",
-                    fontSize: "14px",
-                    fontWeight: "bold",
+                    width: "20px",
+                    height: "20px",
+                    objectFit: "contain",
                   }}
-                >
-                  A
-                </span>
+                />
               </div>
               <div style={{ display: "flex", gap: "3px" }}>
                 {[1, 2, 3, 4, 5].map((star) => (

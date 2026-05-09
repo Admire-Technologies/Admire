@@ -103,11 +103,17 @@ export default function Footer() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              color: '#000',
-              fontWeight: 'bold',
-              fontSize: '16px'
+              overflow: 'hidden'
             }}>
-              A
+              <img
+                src="/admire-logo.png"
+                alt="Admire Logo"
+                style={{
+                  width: '24px',
+                  height: '24px',
+                  objectFit: 'contain'
+                }}
+              />
             </div>
             <span style={{
               fontSize: '13px',
