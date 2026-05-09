@@ -13,7 +13,7 @@ export default function HeroSection() {
           style={{
             maxWidth: "900px",
             width: "100%",
-            paddingBottom:"8rem",
+            paddingBottom:"5rem",
           }}
         >
           <p
