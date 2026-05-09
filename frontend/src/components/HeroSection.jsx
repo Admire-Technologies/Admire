@@ -1,13 +1,11 @@
-import { useState, useEffect } from "react";
-
 export default function HeroSection() {
   return (
-    <>
+    <div style={{ backgroundColor: "#f2f2f2" }}>
       <main
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "0 4rem 4rem",
+          padding: "4rem 4rem",
           width: "100%",
         }}
       >
@@ -15,6 +13,7 @@ export default function HeroSection() {
           style={{
             maxWidth: "900px",
             width: "100%",
+            paddingBottom:"8rem",
           }}
         >
           <p
@@ -27,7 +26,7 @@ export default function HeroSection() {
               letterSpacing: "0.5px",
             }}
           >
-            We're Admire — tech innovators and digital marketing experts
+            Admire — tech innovators and digital marketing experts
           </p>
           <h1
             style={{
@@ -39,7 +38,7 @@ export default function HeroSection() {
               letterSpacing: "-2px",
             }}
           >
-            We help businesses grow through cutting-edge technology
+Empowering business growth with smart technology
           </h1>
           <div
             className="hero-actions"
@@ -108,6 +107,6 @@ export default function HeroSection() {
           </div>
         </div>
       </main>
-    </>
+    </div>
   );
 }

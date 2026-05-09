@@ -162,12 +162,11 @@ export default function PortfolioSection() {
   }, [scrollPosition]);
 
   return (
-    <>
+    <div style={{ backgroundColor: "#f2f2f2" }}>
       {/* Auto-Scrolling Portfolio Section */}
       <section
         ref={portfolioRef}
         style={{
-          margin: "4rem auto 0",
           display: "flex",
           overflowX: "hidden",
           scrollBehavior: "smooth",
@@ -189,6 +188,6 @@ export default function PortfolioSection() {
         <PortfolioImage4 />
         <PortfolioImage5 />
       </section>
-    </>
+    </div>
   );
 }
