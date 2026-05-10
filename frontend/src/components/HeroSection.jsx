@@ -43,7 +43,7 @@ export default function HeroSection() {
               letterSpacing: "-2px",
             }}
           >
-Empowering business growth with technology
+Technology built to move your business forward
           </h1>
           <div
             className="hero-actions"
