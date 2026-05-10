@@ -327,6 +327,31 @@ export default function PricingSection() {
             <button style={pricingStyles.buyButton}>Buy now</button>
           </div>
         </div>
+
+        {/* Quote */}
+        <div style={{
+          textAlign: "center",
+          marginTop: "5rem",
+          padding: "3rem",
+          maxWidth: "800px",
+          justifySelf: "center",
+          
+        }}>
+          <p style={{
+            fontSize: "2rem",
+            fontWeight: "400",
+            lineHeight: "1.6",
+            color: "#1a1a1a",
+            fontStyle: "italic",
+            margin: "0 0 1rem 0",
+            letterSpacing: "-0.02em",
+          }}>
+            "The secret of change is to focus all your energy not on fighting the old, but on building the new."
+          </p>
+          <span style={{ fontSize: "14px", color: "#888", fontWeight: "500", letterSpacing: "2px", textTransform: "uppercase" }}>
+            — Socrates
+          </span>
+        </div>
       </div>
     </section>
   );
