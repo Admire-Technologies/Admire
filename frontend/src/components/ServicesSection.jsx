@@ -26,27 +26,19 @@ export default function ServicesSection() {
     >
       {/* Header — constrained */}
       <div style={{ maxWidth: "1200px", margin: "0 auto", width: "100%", padding: "0 4rem", boxSizing: "border-box" }}>
-        <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-          <p
-            style={{
-              color: "#b5f23d",
-              fontSize: "14px",
-              fontWeight: "500",
-              letterSpacing: "3px",
-              textTransform: "uppercase",
-              marginBottom: "2rem",
-              fontFamily: "'DM Sans', sans-serif",
-            }}
-          >
-            SERVICES
-          </p>
-          <h2 style={{ fontSize: "64px", fontWeight: "600", lineHeight: "1.1", margin: "0 0 0.5rem 0", color: "#ffffff", fontFamily: "'DM Sans', sans-serif" }}>
-            What we do
-          </h2>
-          <p style={{ fontSize: "64px", fontWeight: "600", lineHeight: "1.1", margin: "0", color: "#444", fontFamily: "'DM Sans', sans-serif" }}>
-            Best in class
-          </p>
-        </div>
+        <p
+          style={{
+            color: "#b5f23d",
+            fontSize: "14px",
+            fontWeight: "500",
+            letterSpacing: "3px",
+            textTransform: "uppercase",
+            marginBottom: "2rem",
+            fontFamily: "'DM Sans', sans-serif",
+          }}
+        >
+          SERVICES
+        </p>
       </div>
 
       {/* Service items — full width bleed */}
@@ -62,12 +54,10 @@ export default function ServicesSection() {
               style={{
                 cursor: "pointer",
                 background: isHovered ? "#b5f23d" : "transparent",
-                padding: "0 4rem",
                 transition: "background 0.2s ease",
-                display: "flex",
-                alignItems: "center",
               }}
             >
+              <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 4rem", boxSizing: "border-box", display: "flex", alignItems: "center" }}>
               <span
                 style={{
                   fontSize: "clamp(48px, 7vw, 96px)",
@@ -98,6 +88,7 @@ export default function ServicesSection() {
               >
                 {service.count}
               </sup>
+              </div>
             </div>
           );
         })}
