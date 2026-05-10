@@ -50,32 +50,38 @@ export default function ClientsSection() {
     <div
       style={{
         background: "#ffffff",
-        minHeight: "100vh",
         padding: "8rem 4rem",
         fontFamily: "'DM Sans', sans-serif",
         boxSizing: "border-box",
       }}
     >
-      <p
-        style={{
-          fontSize: "14px",
-          letterSpacing: "3px",
-          textTransform: "uppercase",
-          color: "#666",
-          marginBottom: "2rem",
-          fontWeight: "500",
-        }}
-      >
-        CLIENTS
-      </p>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+      <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+        <p
+          style={{
+            fontSize: "14px",
+            letterSpacing: "3px",
+            textTransform: "uppercase",
+            color: "#666",
+            marginBottom: "2rem",
+            fontWeight: "500",
+          }}
+        >
+          CLIENTS
+        </p>
+        <h2 style={{ fontSize: "64px", fontWeight: "600", lineHeight: "1.1", margin: "0 0 0.5rem 0", color: "#000" }}>
+          Trusted by the best
+        </h2>
+        <p style={{ fontSize: "64px", fontWeight: "600", lineHeight: "1.1", margin: "0", color: "#ccc" }}>
+          Around the world
+        </p>
+      </div>
 
       <div
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(4, 1fr)",
           gap: "12px",
-          maxWidth: "1200px",
-          margin: "0 auto",
         }}
       >
         {clients.map((client, i) => {
@@ -131,6 +137,7 @@ export default function ClientsSection() {
             </div>
           );
         })}
+      </div>
       </div>
     </div>
   );

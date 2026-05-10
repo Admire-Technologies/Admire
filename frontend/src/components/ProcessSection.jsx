@@ -207,7 +207,7 @@ const styles = {
     fontFamily: "'DM Sans', sans-serif",
   },
   container: {
-    maxWidth: "1400px",
+    maxWidth: "1200px",
     margin: "0 auto",
   },
   header: {

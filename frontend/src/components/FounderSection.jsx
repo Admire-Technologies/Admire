@@ -7,7 +7,7 @@ export default function FounderSection() {
       fontFamily: "'DM Sans', sans-serif"
     }}>
       <div style={{
-        maxWidth: '1400px',
+        maxWidth: '1200px',
         margin: '0 auto'
       }}>
 

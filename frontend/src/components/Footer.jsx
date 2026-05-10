@@ -6,10 +6,9 @@ export default function Footer() {
       backgroundColor: '#000',
       color: '#fff',
       padding: '6rem 4rem 4rem',
-      position: 'relative'
     }}>
       <div style={{
-        maxWidth: '1400px',
+        maxWidth: '1200px',
         margin: '0 auto'
       }}>
         {/* Top Section with Image and CTA */}
@@ -128,42 +127,30 @@ export default function Footer() {
             display: 'flex',
             gap: '3rem'
           }}>
-            <a href="#home" style={{
+            <Link to="/" style={{
               color: '#fff',
               textDecoration: 'none',
               fontSize: '14px',
-              fontWeight: '500',
-              transition: 'color 0.2s ease'
+              fontWeight: '500'
             }}>
               Home
-            </a>
-            <a href="#services" style={{
+            </Link>
+            <Link to="/work" style={{
               color: '#fff',
               textDecoration: 'none',
               fontSize: '14px',
-              fontWeight: '500',
-              transition: 'color 0.2s ease'
+              fontWeight: '500'
             }}>
-              Services
-            </a>
-            <a href="#work" style={{
+              Work
+            </Link>
+            <Link to="/contact" style={{
               color: '#fff',
               textDecoration: 'none',
               fontSize: '14px',
-              fontWeight: '500',
-              transition: 'color 0.2s ease'
-            }}>
-              Portfolio
-            </a>
-            <a href="#contact" style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '14px',
-              fontWeight: '500',
-              transition: 'color 0.2s ease'
+              fontWeight: '500'
             }}>
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Social Icons */}

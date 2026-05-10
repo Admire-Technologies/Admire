@@ -307,7 +307,7 @@ export default function WhyMeSection() {
       >
         <div
           style={{
-            maxWidth: "1400px",
+            maxWidth: "1200px",
             margin: "0 auto",
           }}
         >

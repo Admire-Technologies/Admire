@@ -8,7 +8,7 @@ export default function Header() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "3rem 4rem",
+          padding: "1.5rem 4rem",
           maxWidth: "1200px",
           margin: "0 auto",
           width: "100%",
