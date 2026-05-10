@@ -368,7 +368,6 @@ export default function WhyMeSection() {
               style={{
                 backgroundColor: "#f5f5f5",
                 borderRadius: "20px",
-                padding: "3rem",
                 minHeight: "280px",
                 display: "flex",
                 flexDirection: "column",
@@ -378,18 +377,20 @@ export default function WhyMeSection() {
             >
               <h3
                 style={{
-                  fontSize: "24px",
-                  fontWeight: "600",
+                  fontSize: "28px",
+                  fontWeight: "500",
                   lineHeight: "1.3",
-                  margin: "0 0 3rem 0",
+                  margin: "0 0 2rem 0",
                   color: "#000",
+                                  padding: "3rem",
+
                 }}
               >
-                Full-stack development
-                <br />& digital marketing
+                Branding, tech 
+                <br />growth through design and development.
               </h3>
 
-              <div style={{ position: "relative", height: "80px" }}>
+              <div style={{ position: "relative", height: "80px" ,bottom: "4rem",}}>
                 {/* Top row - scrolling left to right */}
                 <div
                   style={{
