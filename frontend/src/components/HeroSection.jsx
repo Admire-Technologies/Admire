@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HeroSection() {
   return (
     <div style={{ backgroundColor: "#f2f2f2" }}>
@@ -48,6 +50,7 @@ Empowering business growth with smart technology
               gap: "2rem",
             }}
           >
+            <Link to="/work" style={{ textDecoration: "none" }}>
             <button
               style={{
                 backgroundColor: "#000",
@@ -61,8 +64,9 @@ Empowering business growth with smart technology
                 whiteSpace: "nowrap",
               }}
             >
-              View our solutions
+              View our work
             </button>
+            </Link>
             <div
               style={{
                 display: "flex",

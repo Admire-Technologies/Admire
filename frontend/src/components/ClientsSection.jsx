@@ -51,18 +51,19 @@ export default function ClientsSection() {
       style={{
         background: "#ffffff",
         minHeight: "100vh",
-        padding: "48px 60px",
-        fontFamily: "Arial, sans-serif",
+        padding: "8rem 4rem",
+        fontFamily: "'DM Sans', sans-serif",
         boxSizing: "border-box",
       }}
     >
       <p
         style={{
-          color: "#111111",
-          fontSize: "11px",
-          fontWeight: "700",
-          letterSpacing: "0.25em",
-          margin: "0 0 32px 0",
+          fontSize: "14px",
+          letterSpacing: "3px",
+          textTransform: "uppercase",
+          color: "#666",
+          marginBottom: "2rem",
+          fontWeight: "500",
         }}
       >
         CLIENTS

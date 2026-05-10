@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Contact() {
   useEffect(() => {
@@ -53,60 +54,14 @@ export default function Contact() {
   }, [])
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      backgroundColor: '#e8e8e8',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-      padding: '2rem 4rem'
-    }}>
-      {/* Header */}
-      <header style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        maxWidth: '1400px',
-        margin: '0 auto 4rem'
-      }}>
-        <Link to="/" style={{ textDecoration: 'none' }}>
-          <div style={{
-            width: '40px',
-            height: '40px',
-            backgroundColor: '#000',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#fff',
-            fontWeight: 'bold',
-            fontSize: '18px',
-            cursor: 'pointer'
-          }}>
-            R
-          </div>
-        </Link>
-        <Link to="/contact" style={{ textDecoration: 'none' }}>
-          <button style={{
-            backgroundColor: '#c4ff4d',
-            border: 'none',
-            borderRadius: '25px',
-            padding: '12px 24px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            cursor: 'pointer',
-            fontSize: '14px',
-            fontWeight: '500'
-          }}>
-            Get in touch
-            <span style={{ fontSize: '18px' }}>→</span>
-          </button>
-        </Link>
-      </header>
+    <div style={{ minHeight: '100vh', backgroundColor: '#f2f2f2', fontFamily: "'DM Sans', sans-serif" }}>
+      <Header />
 
       {/* Main Content */}
       <div style={{
-        maxWidth: '1400px',
-        margin: '0 auto'
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: '4rem'
       }}>
         {/* Title Section */}
         <div style={{ marginBottom: '3rem' }}>
@@ -216,6 +171,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
