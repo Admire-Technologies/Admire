@@ -35,7 +35,7 @@ export default function HeroSection() {
           </p>
           <h1
             style={{
-              fontSize: "70px",
+              fontSize: "60px",
               fontWeight: "600",
               lineHeight: "1.1",
               margin: "0 0 3rem 0",
@@ -43,73 +43,79 @@ export default function HeroSection() {
               letterSpacing: "-2px",
             }}
           >
-Empowering business growth with smart technology
+Empowering business growth with technology
           </h1>
           <div
             className="hero-actions"
-            style={{
+            style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}
+          >
+            {/* Email input box */}
+            <div style={{
               display: "flex",
               alignItems: "center",
-              gap: "2rem",
-            }}
-          >
-            <Link to="/work" style={{ textDecoration: "none" }}>
-            <button
-              style={{
-                backgroundColor: "#000",
-                color: "#fff",
-                border: "none",
-                borderRadius: "30px",
-                padding: "16px 32px",
-                cursor: "pointer",
-                fontSize: "15px",
-                fontWeight: "500",
-                whiteSpace: "nowrap",
-              }}
-            >
-              View our work
-            </button>
-            </Link>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "10px",
-              }}
-            >
-              <div
+              backgroundColor: "#fff",
+              border: "1px solid #ddd",
+              padding: "6px 6px 6px 20px",
+              maxWidth: "480px",
+            }}>
+              <input
+                type="email"
+                placeholder="Enter your business email"
                 style={{
-                  width: "28px",
-                  height: "28px",
-                  backgroundColor: "#fff",
-                  borderRadius: "50%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-                  overflow: "hidden",
+                  flex: 1,
+                  border: "none",
+                  outline: "none",
+                  fontSize: "15px",
+                  color: "#333",
+                  backgroundColor: "transparent",
+                  fontFamily: "'DM Sans', sans-serif",
                 }}
-              >
-                <img
+              />
+              <Link to="/contact" style={{ textDecoration: "none" }}>
+                <button style={{
+                  backgroundColor: "#000",
+                  color: "#fff",
+                  border: "none",
+                  borderRadius: "8px",
+                  padding: "12px 22px",
+                  cursor: "pointer",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                  whiteSpace: "nowrap",
+                  fontFamily: "'DM Sans', sans-serif",
+                }}>
+                  Connect with us
+                </button>
+              </Link>
+            </div>
+
+            {/* Social proof row */}
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+              maxWidth: "480px",
+              
+              padding: "4px 16px",
+            }}>
+              <img
                   src="/admire-logo.png"
                   alt="Admire Logo"
                   style={{
-                    width: "20px",
-                    height: "20px",
+                    width: "30px",
+                    height: "30px",
                     objectFit: "contain",
                   }}
                 />
-              </div>
-              <div style={{ display: "flex", gap: "3px" }}>
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <span
-                    key={star}
-                    style={{ color: "#ff4d4d", fontSize: "16px" }}
-                  >
-                    ★
-                  </span>
+              <div style={{ display: "flex", gap: "2px" }}>
+                {[1,2,3,4,5].map(s => (
+                  <span key={s} style={{ color: "#ff4d4d", fontSize: "14px" }}>★</span>
                 ))}
               </div>
+              <div style={{ width: "1px", height: "16px", backgroundColor: "#e0e0e0" }} />
+              <span style={{ fontSize: "13px", color: "#666" }}>
+                Trusted by <strong style={{ color: "#000" }}>20+ businesses</strong> 
+              </span>
             </div>
           </div>
         </div>
