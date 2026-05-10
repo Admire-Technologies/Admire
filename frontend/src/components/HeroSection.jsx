@@ -7,15 +7,18 @@ export default function HeroSection() {
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "4rem 4rem",
+          padding: "2rem 4rem 4rem",
           width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: "2rem",
         }}
       >
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: "600px",
             width: "100%",
-            paddingBottom:"5rem",
           }}
         >
           <p
@@ -109,6 +112,25 @@ Empowering business growth with smart technology
               </div>
             </div>
           </div>
+        </div>
+        {/* Hero Image */}
+        <div style={{ flexShrink: 0, width: "600px", height: "600px", position: "relative", display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <img
+            src="/to-recreate-this-illustration-as-a-clean--scalable.svg"
+            alt="Hero illustration"
+            style={{ width: "100%", height: "100%", objectFit: "contain", position: "relative", zIndex: 1 }}
+          />
+          <div style={{
+            position: "absolute",
+            bottom: "2px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "55%",
+            height: "18px",
+            background: "radial-gradient(ellipse, rgba(0,0,0,0.25) 0%, transparent 70%)",
+            borderRadius: "50%",
+            zIndex: 0,
+          }} />
         </div>
       </main>
     </div>
