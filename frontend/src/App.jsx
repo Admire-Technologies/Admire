@@ -5,7 +5,8 @@ import Work from './pages/Work'
 import AdminLogin from './admin/pages/AdminLogin'
 import Dashboard from './admin/pages/Dashboard'
 import Contacts from './admin/pages/Contacts'
-import { Projects, Services, Clients, Subscribers } from './admin/pages/AdminPages'
+import { Projects } from './admin/pages/Projects'
+import { Services, Clients, Subscribers } from './admin/pages/AdminPages'
 import ProtectedRoute from './admin/components/ProtectedRoute'
 import { ThemeProvider } from './admin/components/ThemeContext'
 
@@ -13,12 +14,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Public */}
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/work" element={<Work />} />
 
-        {/* Admin — all wrapped in ThemeProvider */}
         <Route path="/admin/*" element={
           <ThemeProvider>
             <Routes>

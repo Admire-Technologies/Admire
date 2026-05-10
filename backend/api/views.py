@@ -24,16 +24,24 @@ class ContactInquiryViewSet(viewsets.ModelViewSet):
         return [IsAuthenticatedOrReadOnly()]
 
 
-class ServiceViewSet(viewsets.ReadOnlyModelViewSet):
+class ServiceViewSet(viewsets.ModelViewSet):
     queryset = Service.objects.filter(is_active=True)
     serializer_class = ServiceSerializer
-    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.action in ['list', 'retrieve']:
+            return [AllowAny()]
+        return [IsAuthenticatedOrReadOnly()]
 
 
-class ProjectViewSet(viewsets.ReadOnlyModelViewSet):
+class ProjectViewSet(viewsets.ModelViewSet):
     queryset = Project.objects.filter(is_active=True)
     serializer_class = ProjectSerializer
-    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.action in ['list', 'retrieve']:
+            return [AllowAny()]
+        return [IsAuthenticatedOrReadOnly()]
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -43,10 +51,14 @@ class ProjectViewSet(viewsets.ReadOnlyModelViewSet):
         return qs
 
 
-class ClientViewSet(viewsets.ReadOnlyModelViewSet):
+class ClientViewSet(viewsets.ModelViewSet):
     queryset = Client.objects.filter(is_active=True)
     serializer_class = ClientSerializer
-    permission_classes = [AllowAny]
+
+    def get_permissions(self):
+        if self.action in ['list', 'retrieve']:
+            return [AllowAny()]
+        return [IsAuthenticatedOrReadOnly()]
 
 
 class SubscriberViewSet(viewsets.ModelViewSet):
